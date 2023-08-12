@@ -1,0 +1,506 @@
+body{
+  color:rgb(26, 26, 26);
+  background-color: rgba(227, 243, 234, 0.3);
+  font-family: Helvetica;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin: 70px auto;
+  text-align: center;
+  padding: auto;
+}
+
+.p-contact{
+  margin: 10px 20px;
+  text-align: center;
+  padding: auto;
+}
+
+h2, h3{
+  text-align: center;
+}
+
+
+/* ---- Conversion Fieldset ---- */
+
+.fieldset-auto-width{
+    background-color: rgba(124, 142, 135, 0.2);
+    box-shadow: 12px 12px rgba(106, 141, 128, 0.6); 
+    margin: 2.5em auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #B0B0B0;
+    padding: 0;
+    height: 145px;
+    width: 75%;
+}
+
+
+/* ---- Input Box in Diary Page ---- */
+
+.diary-input {
+
+  position: relative;
+  display: block;
+  width: 75%;
+  margin: 2.5em auto;
+  padding: 10px 10px 10px 20px;
+
+}
+
+.diary-input-button{
+  position: absolute;
+  right: 20px;
+  z-index:2;
+  border:0;
+  top: -1px;
+  bottom: -1px;
+  outline: none;
+  margin: 1px 1px;
+  padding: 10px 15px;
+  color:white;
+  background-color: rgba(106, 141, 128, 0.9);
+  border-radius: 1px;
+}
+
+/* ---- Input Box in Homepage ---- */
+
+.add-input {
+  position: relative;
+  width: 300px;
+  display: block;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.add-input-input{
+  padding: 10px 10px 10px 20px;
+  border: 4px solid rgba(25, 50, 43, 0.8);
+  box-shadow: 10px 10px rgba(151, 184, 174, 0.5);
+  width: 100%;
+  outline: none;
+  line-height: 1;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 60px;  
+}
+
+.add-input-button{
+  position: absolute;
+  right: 5px;
+  z-index:2;
+  border:0;
+  top: 5px;
+  bottom: 5px;
+  outline: none;
+  margin: 1px 1px;
+  padding: 0 15px;
+  color:white;
+  background-color: rgba(106, 141, 128, 0.9);
+  border-radius: 1px;
+}
+
+
+
+/* ---- Button ---- */
+
+button {
+  background-color: rgba(106, 141, 128, 0.8);
+  color: rgb(27, 27, 27);
+  border: solid 2px rgb(65, 95, 84);
+  border-radius:10px;
+  padding: 15px 15px;
+  display: block;
+  margin: 20px auto;
+}
+
+button:hover{
+  background: rgba(101, 149, 131, 0.5);
+}
+
+.edit-entry:hover{
+  color: rgba(18, 44, 34, 0.5);
+}
+
+
+/* ---- React Icon ---- */
+
+.trash-icon{
+  color: rgb(52, 104, 85);
+}
+
+.trash-icon:hover{
+  color: rgba(34, 76, 60, 0.5);
+}
+
+/* ---- Form ---- */
+
+.form-container{
+  margin: 40px auto;
+  width: 75%;
+  position: relative;
+  border-radius: 10px;
+  height: 100px;  
+}
+
+.form-input{
+  background-color: rgba(172, 191, 183, 0.4);
+  display: block;
+  padding-left: 5px;
+  outline: none;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+.form-message{
+  display: block;
+  padding-left: 5px;
+  outline: none;
+  height: 100px;
+  width: 100%;
+  border: none;  
+}
+
+
+.form-select {
+  position: relative;
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+
+}
+  select {
+    border: 1px solid ;
+    outline:none;
+    border-radius: 0;
+    margin:0;
+    display:block;
+    width: 100%;
+    cursor: pointer;
+    padding: 12px 55px 15px 15px;
+    font-size: 14px;
+  }
+
+label {
+  display: block;
+  padding: 12px 12px 12px 0;
+  text-align: center;  
+}
+
+@media screen and (max-width: 960px) {
+
+  .form-container{
+    margin: 20px auto;
+    width: 500px;
+    position: relative;
+    border-radius: 10px;
+    height: 100px;
+  }  
+}
+
+/* ---- Navigation ---- */
+
+.nav {
+background: rgba(106, 141, 128, 0.9);
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1em;
+text-transform: uppercase;
+position: sticky;
+top: 0;
+z-index: 999;
+}
+
+.nav-container {
+display: flex;
+justify-content: space-between;
+height: 35px;
+z-index: 1;
+width: 100%;
+max-width: 1300px;
+margin-right: auto;
+margin-left: auto;
+padding-right: 350px;
+
+}
+
+.container {
+z-index: 1;
+width: 100%;
+max-width: 1300px;
+margin-right: auto;
+margin-left: auto;
+padding-right: 50px;
+padding-left: 50px;
+}
+
+.nav-logo {
+color: rgb(246, 246, 246);
+font-family: Arial, Helvetica, sans-serif;
+justify-self: start;
+cursor: pointer;
+text-decoration: none;
+font-size: 2rem;
+font-weight: bold;
+display: flex;
+align-items: center;
+top: 0;
+right: 0;
+transform: translate(-50%, 70%);
+position: absolute;
+
+}
+
+.nav-logo:hover{
+  color: rgba(55, 82, 73, 0.5);
+}
+
+.nav-icon {
+margin-right: 0.5rem;
+}
+
+.nav-menu {
+display: flex;
+align-items: center;
+list-style: none;
+text-align: center; 
+
+}
+
+.nav-menu-item {
+height: 80px;
+border-bottom: 2px solid transparent;
+text-align: center;
+}
+
+.nav-menu-item:hover {
+border-bottom: 3px solid rgba(96, 124, 114, 0.5);
+}
+
+.nav-menu-links {
+color: rgb(255, 252, 252);
+font-weight: bold;
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 0.5rem 1rem;
+height: 100%;
+}
+
+
+.nav-menu-icon {
+display: none;
+color: rgb(249, 249, 249);
+}
+
+
+@media screen and (max-width: 960px) {
+.NavItems {
+  position: relative;
+}
+
+.nav-menu {
+  display: flex;    
+  width: 100%;
+  height: 95vh;
+  position: absolute;
+  top: 65px;
+  left: -120%;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.nav-menu.active {
+  background: rgba(106, 141, 128, 0.9);
+  left: -25%;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: auto;
+  flex-direction: column;
+  display: block;
+}
+
+.nav-menu-links {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  display: table;
+  color: rgb(248, 248, 248);
+}
+
+.nav-menu-links:hover {
+  color: rgba(55, 82, 73, 0.5);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.nav-menu-item:hover {
+  border: none;
+}
+
+.nav-menu-item {
+  width: 100%;
+  
+}
+
+.nav-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(45%, -50%);
+}
+
+.nav-logo:hover {
+  color: rgba(55, 82, 73, 0.5);
+}
+
+.nav-menu-icon {
+  display: block;
+  position: absolute;
+  left: 5%;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+}
+
+.nav-menu-icon:hover {
+  color: rgba(55, 82, 73, 0.5);
+}
+
+@media screen and (max-width:414px) {
+.NavItems {
+  position: relative;
+}
+  
+.nav-logo {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(50%, -50%);
+  }
+}
+
+@media screen and (max-width:320px) {
+  .NavItems {
+    position: relative;
+  }
+    
+  .nav-logo {
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      transform: translate(40%, -50%);
+    }
+  }
+
+
+/* ---- Table ---- */
+table{
+width: 75%;
+border: 1px solid #ccc;
+border-collapse: collapse;
+margin: auto;
+padding: 0;
+table-layout: fixed;
+box-shadow: 12px 12px rgba(106, 141, 128, 0.6); 
+}
+
+tbody{
+text-align: center;
+font-size: 0.9em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .80em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background-color: rgba(179, 211, 193, 0.2);
+}
+
+
+/* ---- Help Page----- */
+.help {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 15px 15px 5px -15px;
+}
+
+.help .questions {
+  margin: 35px;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: rgba(116, 148, 131, 0.2);
+  box-shadow: 10px 10px rgba(45, 63, 53, 0.3);
+}
+
+.help .questions .questions-question {
+  position: relative;
+  font-size: 14px;
+  padding-right: 80px;
+  transition: all 0.2s ease;
+}
+
+.help .questions .questions-question::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease;
+}
+
+.help .questions .questions-answer {
+  opacity: 0;
+  max-height: 10px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.help .questions.open .questions-question {
+  margin-bottom: 25px;
+}
+
+.help .questions.open .questions-question::after {
+  content: "-"; 
+}
+
+.help .questions.open .questions-answer {
+  max-height: 1000px;
+  opacity: 1;
+  font-size: 14px;
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  color: rgba(239, 243, 241, 0.6);
+  background-color: rgba(106, 141, 128, 0.9);
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+}
